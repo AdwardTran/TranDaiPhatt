@@ -1,7 +1,7 @@
-package com.example.demo36.Validator;
+package com.example.demo36.validator;
 
 import com.example.demo36.repository.IUserRepository;
-import com.example.demo36.Validator.annotation.ValidUsername;
+import com.example.demo36.validator.annotation.ValidUsername;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +14,6 @@ public class ValidUsernameValidator implements ConstraintValidator <ValidUsernam
     public boolean isValid(String username , ConstraintValidatorContext context){
         if (userRepository == null)
             return true;
-        return userRepository.findByUsername(username) = null;
+        return userRepository.findByUsername(username) == null;
     }
 }

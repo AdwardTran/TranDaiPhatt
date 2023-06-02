@@ -1,7 +1,6 @@
-package com.example.demo36.Validator.annotation;
+package com.example.demo36.validator.annotation;
 
-import com.example.demo36.Validator.ValidCategoryIdValidator;
-import com.example.demo36.Validator.annotation.ValidCategoryId;
+import com.example.demo36.validator.ValidCategoryIdValidator;
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;
 import java.lang.annotation.Documented;
